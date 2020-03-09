@@ -1,7 +1,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+title {
   font-family: $primary-font-stack;
   color: $primary-text-color;
   font-weight: 700;
@@ -9,7 +10,8 @@ h4 {
   padding: 0;
 }
 
-p {
+p,
+text {
   font-family: $secondary-font-stack;
   color: $secondary-color-text;
   margin: 0;
