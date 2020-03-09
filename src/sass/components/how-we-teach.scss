@@ -1,0 +1,150 @@
+.how-we-teach--container {
+  max-width: 280px;
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+
+.how-we-teach {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.how-we-teach__header {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 78px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/how-we-teach/header-icon.png);
+    background-repeat: no-repeat;
+    background-color: #fcae26;
+    background-size: 17px 17px;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+.how-we-teach__item {
+  margin-bottom: 30px;
+}
+
+.overlay {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  background-color: #ffefe5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.overlay--handshake {
+  background-color: #ffe0d6;
+}
+
+.overlay--hand {
+  background-color: #e6dcf9;
+}
+
+.overlay--money {
+  background-color: #cceeec;
+  fill: #00ab9f;
+}
+
+.overlay--lamp {
+  background-color: #e6dcf9;
+}
+
+.overlay--folder {
+  background-color: #ffe0d6;
+}
+
+.how-we-teach__icon {
+  width: 34px;
+  height: 34px;
+}
+
+.how-we-teach__text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .how-we-teach--container {
+    max-width: 690px;
+    margin-bottom: 67px;
+  }
+
+  .how-we-teach__header {
+    padding-right: 34px;
+    padding-left: 34px;
+    margin-bottom: 50px;
+    font-size: 33px;
+  }
+
+  .how-we-teach {
+    padding-right: 79px;
+    padding-left: 79px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .how-we-teach__item {
+    flex-basis: calc(50% - 80px);
+    margin-right: 80px;
+    margin-bottom: 37px;
+  }
+
+  .how-we-teach__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .how-we-teach__section {
+    background-color: #fafafa;
+    background-image: url(../images/how-we-teach/bg.png);
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .how-we-teach--container {
+    max-width: 1300px;
+  }
+
+  .how-we-teach__header {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .how-we-teach {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .how-we-teach__item {
+    flex-basis: calc(25% - 50px);
+    margin-right: 50px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .how-we-teach__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
