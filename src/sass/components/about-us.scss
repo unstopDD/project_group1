@@ -5,16 +5,13 @@
   padding-top: 35px;
 }
 
-.icon-quote {
-  fill: $color-orange;
-  height: 26px;
-  width: 20px;
-  margin-bottom: 10px;
-  display: block;
+.about-us__quotes {
+  color: $color-orange;
+  font-size: 32px;
 }
 
 .about-us__quote__text {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 14px;
   letter-spacing: 0.9px;
   line-height: 1.4;
@@ -33,7 +30,7 @@
   align-items: center;
   border-radius: 8px;
   position: relative;
-  margin-top: 70px;
+  margin-top: 42px;
 
   &::before {
     content: '';
@@ -63,7 +60,7 @@
 
   .about-us__quote {
     position: relative;
-    padding-top: 20px;
+    padding-top: 40px;
   }
 
   .about-us__quote__text {
@@ -74,10 +71,9 @@
     border-radius: 3px;
   }
 
-  .icon-quote {
+  .about-us__quotes {
+    font-size: 50px;
     position: absolute;
-    width: 25px;
-    height: 25px;
     bottom: 105px;
     left: -33px;
   }
@@ -87,6 +83,7 @@
     height: 183px;
     border-radius: 3px;
     box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 70px;
 
     &::before {
       width: 2px;
@@ -118,7 +115,7 @@
     align-items: center;
   }
 
-  .icon-quote {
+  .about-us__quotes {
     top: 0;
     left: -35px;
   }
@@ -141,8 +138,9 @@
     box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.15);
 
     &::before {
+      height: 88px;
       left: 180px;
-      top: 65px;
+      top: 70px;
     }
   }
 
