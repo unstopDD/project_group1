@@ -24,7 +24,7 @@
 .about-us__description {
   background-color: #824fe3;
   width: 280px;
-  height: 230px;
+  min-height: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +80,7 @@
 
   .about-us__description {
     width: 620px;
-    height: 183px;
+    min-height: 183px;
     border-radius: 3px;
     box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.15);
     margin-top: 70px;
@@ -96,7 +96,7 @@
   .about-us__description__text {
     text-align: left;
     width: 440px;
-    height: 100px;
+    min-height: 100px;
     font-size: 20px;
     line-height: 1.4;
   }
@@ -132,7 +132,7 @@
 
   .about-us__description {
     width: 1300px;
-    height: 230px;
+    min-height: 230px;
     margin-top: 115px;
     border-radius: 4px;
     box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.15);
@@ -146,7 +146,7 @@
 
   .about-us__description__text {
     width: 890px;
-    height: 90px;
+    min-height: 90px;
     font-size: 25px;
   }
 }
