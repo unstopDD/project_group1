@@ -2,12 +2,15 @@
  * Все паршалы импортировать в этот файл
  */
 
-@import './components/vars.scss';
+@import './vars.scss';
 @import '../fonts/fonts.scss';
-@import 'normalize.scss';
-@import 'base.scss';
+@import './normalize.scss';
+@import './base.scss';
 
 // Utils
 @import './utils/list.scss';
 @import './utils/typografy.scss';
 @import './utils/container.scss';
+
+//Components
+@import './components/learning-structure.scss';
