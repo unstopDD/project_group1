@@ -1,12 +1,4 @@
 .learning-structure {
-  max-width: 1340px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.ls-container {
   padding-bottom: 60px;
 }
 
@@ -112,7 +104,7 @@
 }
 
 @media screen and (min-width: 660px) {
-  .ls-container {
+  .learning-structure {
     max-width: 620px;
     padding-top: 30px;
     padding-bottom: 75px;
@@ -171,7 +163,7 @@
 }
 
 @media screen and (min-width: 1330px) {
-  .ls-container {
+  .learning-structure {
     max-width: 1290px;
     padding-bottom: 115px;
   }
