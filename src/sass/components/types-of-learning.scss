@@ -17,7 +17,7 @@
 }
 
 .direction-text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $primary-font-stack;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -36,39 +36,48 @@
   margin-right: auto;
   margin-left: auto;
   border-radius: 7px;
-}
 
-.direction-item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: #e9ac38;
+  }
+
+  &:hover .direction-article,
+  &:focus .direction-article,
+  &:hover .direction-age,
+  &:focus .direction-age,
+  &:hover .direction-link,
+  &:focus .direction-link {
+    color: #ffffff;
+  }
 }
 
 .direction-subtitle {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 25px;
-  color: #222222;
-  font-family: 'Ubuntu', sans-serif;
+  color: $primary-text-color;
+  font-family: $secondary-font-stack;
   font-weight: 700;
 }
 
 .direction-article {
   font-size: 16px;
-  color: #444444;
-  font-family: 'Ubuntu', sans-serif;
+  color: $secondary-color-text;
+  font-family: $secondary-font-stack;
   font-weight: 400;
   margin-top: 30px;
   margin-bottom: 25px;
-}
-
-.direction-item:hover .direction-article {
-  color: #ffffff;
 }
 
 .direction-age {
   font-size: 30px;
   font-weight: 700;
   color: #e9ac38;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $primary-font-stack;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 20px;
@@ -76,19 +85,11 @@
 }
 
 .direction-age-text {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: $secondary-font-stack;
   font-weight: 400;
   font-size: 13px;
   text-decoration: underline;
   vertical-align: 25px;
-}
-
-.direction-item:hover .direction-age {
-  color: #ffffff;
-}
-
-.direction-item:hover {
-  background-color: #e9ac38;
 }
 
 .direction-link {
@@ -96,10 +97,6 @@
   color: #e9ac38;
   padding: 10px;
   text-decoration: none;
-}
-
-.direction-item:hover .direction-link {
-  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -114,14 +111,14 @@
     flex-basis: calc(100% / 2 - 100px);
     border-bottom: 1px dashed #e4e4e5;
     border-right: 1px dashed #e4e4e5;
-  }
 
-  .direction-item:nth-child(2n) {
-    border-right: none;
-  }
+    &:nth-child(2n) {
+      border-right: none;
+    }
 
-  .direction-item:nth-last-child(-n + 2) {
-    border-bottom: none;
+    &:nth-last-child(-n + 2) {
+      border-bottom: none;
+    }
   }
 }
 
@@ -133,9 +130,9 @@
   .direction-item {
     border: none;
     border-right: 1px dashed #e4e4e5;
-  }
 
-  .direction-item:nth-child(2) {
-    border-right: 1px dashed #e4e4e5;
+    &:nth-child(2) {
+      border-right: 1px dashed #e4e4e5;
+    }
   }
 }
