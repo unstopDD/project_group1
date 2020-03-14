@@ -1,0 +1,141 @@
+.direction {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.direction-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.direction-icon {
+  width: 30px;
+  height: 30px;
+  fill: #e9ac38;
+}
+
+.direction-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.direction-item {
+  width: 280px;
+  background-color: #fafafa;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 45px;
+  padding-right: 30px;
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 7px;
+}
+
+.direction-item:last-child {
+  margin-bottom: 0;
+}
+
+.direction-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 25px;
+  color: #222222;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.direction-article {
+  font-size: 16px;
+  color: #444444;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.direction-item:hover .direction-article {
+  color: #ffffff;
+}
+
+.direction-age {
+  font-size: 30px;
+  font-weight: 700;
+  color: #e9ac38;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-right: -1px;
+}
+
+.direction-age-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-decoration: underline;
+  vertical-align: 25px;
+}
+
+.direction-item:hover .direction-age {
+  color: #ffffff;
+}
+
+.direction-item:hover {
+  background-color: #e9ac38;
+}
+
+.direction-link {
+  font-size: 20px;
+  color: #e9ac38;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.direction-item:hover .direction-link {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .direction-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .direction-item {
+    margin: 0;
+    flex-basis: calc(100% / 2 - 100px);
+    border-bottom: 1px dashed #e4e4e5;
+    border-right: 1px dashed #e4e4e5;
+  }
+
+  .direction-item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .direction-item:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .direction-list {
+    flex-wrap: nowrap;
+  }
+
+  .direction-item {
+    border: none;
+    border-right: 1px dashed #e4e4e5;
+  }
+
+  .direction-item:nth-child(2) {
+    border-right: 1px dashed #e4e4e5;
+  }
+}
