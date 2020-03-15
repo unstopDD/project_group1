@@ -100,6 +100,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .direction-title {
+    justify-content: flex-start;
+    margin-left: 100px;
+  }
+
   .direction-list {
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +128,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .direction-title {
+    margin-left: 0;
+  }
+
   .direction-list {
     flex-wrap: nowrap;
   }
