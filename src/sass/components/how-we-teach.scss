@@ -13,8 +13,6 @@
   text-transform: uppercase;
   font-size: 20px;
   line-height: 78px;
-  padding-right: 20px;
-  padding-left: 20px;
   display: flex;
   align-items: center;
 
@@ -23,11 +21,9 @@
     content: '';
     width: 30px;
     height: 30px;
-    background-image: url(../images/how-we-teach/header-icon.png);
-    background-repeat: no-repeat;
+    background-image: url('../images/css_sprites.png');
+    background-position: -218px -414px;
     background-color: #fcae26;
-    background-size: 17px 17px;
-    background-position: center;
     border-radius: 50%;
     margin-right: 10px;
   }
@@ -35,44 +31,47 @@
 
 .how-we-teach__item {
   margin-bottom: 30px;
-}
 
-.overlay {
-  width: 55px;
-  height: 55px;
-  text-align: center;
-  background-color: #ffefe5;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-}
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: #ffefe5;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: url('../images/css_sprites.png');
+    background-position: -411px -234px;
+  }
 
-.overlay--handshake {
-  background-color: #ffe0d6;
-}
+  &:nth-child(2)::before {
+    background-color: #ffe0d6;
+    background-position: -412px -60px;
+  }
 
-.overlay--hand {
-  background-color: #e6dcf9;
-}
+  &:nth-child(3)::before {
+    background-color: #e6dcf9;
+    background-position: -582px -61px;
+  }
 
-.overlay--money {
-  background-color: #cceeec;
-  fill: #00ab9f;
-}
+  &:nth-child(4)::before {
+    background-color: #cceeec;
+    background-position: -59px -60px;
+  }
 
-.overlay--lamp {
-  background-color: #e6dcf9;
-}
+  &:nth-child(5)::before {
+    background-color: #e6dcf9;
+    background-position: -233px -234px;
+  }
 
-.overlay--folder {
-  background-color: #ffe0d6;
-}
+  &:nth-child(6)::before {
+    background-color: #ffe0d6;
+    background-position: -238px -61px;
+  }
 
-.how-we-teach__icon {
-  width: 34px;
-  height: 34px;
+  &:nth-child(7)::before {
+    background-position: -59px -237px;
+  }
 }
 
 .how-we-teach__text {
@@ -104,6 +103,36 @@
     flex-basis: calc(50% - 80px);
     margin-right: 80px;
     margin-bottom: 37px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      background-position: -399px -221px;
+    }
+
+    &:nth-child(2)::before {
+      background-position: -399px -49px;
+    }
+
+    &:nth-child(3)::before {
+      background-position: -569px -48px;
+    }
+
+    &:nth-child(4)::before {
+      background-position: -46px -47px;
+    }
+
+    &:nth-child(5)::before {
+      background-position: -220px -221px;
+    }
+
+    &:nth-child(6)::before {
+      background-position: -225px -48px;
+    }
+
+    &:nth-child(7)::before {
+      background-position: -46px -224px;
+    }
   }
 
   .how-we-teach__text {
@@ -118,6 +147,11 @@
     background-image: url(../images/how-we-teach/bg.png);
     background-position: center;
     background-attachment: fixed;
+  }
+
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
   .how-we-teach--container {
@@ -137,6 +171,36 @@
   .how-we-teach__item {
     flex-basis: calc(25% - 50px);
     margin-right: 50px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      background-position: -389px -212px;
+    }
+
+    &:nth-child(2)::before {
+      background-position: -389px -39px;
+    }
+
+    &:nth-child(3)::before {
+      background-position: -559px -38px;
+    }
+
+    &:nth-child(4)::before {
+      background-position: -36px -37px;
+    }
+
+    &:nth-child(5)::before {
+      background-position: -210px -211px;
+    }
+
+    &:nth-child(6)::before {
+      background-position: -215px -38px;
+    }
+
+    &:nth-child(7)::before {
+      background-position: -36px -214px;
+    }
 
     &:nth-child(4n) {
       margin-right: 0;

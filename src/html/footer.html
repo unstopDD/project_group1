@@ -1,24 +1,21 @@
 <footer class="footer">
-  <div class="footer__container">
-    <h2 class="footer_header">Шапка футера</h2>
+  <div class="footer__container container">
+    <h2 class="footer_header visually-hidden">Заголовок футера</h2>
     <div class="footer__logo">
       <a href="/" class="footer__logo--link">
-        <svg class="footer__logo">
-          <use href="../images/footer/logo.svg#Logo"></use>
-        </svg>
+        <img src="../images/footer/logo.svg.png" alt="Logo" />
       </a>
     </div>
 
-    <div class="over">
-      <div class="footer__adress">
-        <p class="footer__adress--text">
-          01133 Україна, Київ<br />
-          5 хвилин від м. Печерська <br />
-          вул. Лесі Українки 26
-          <br />
-          4-й поверх
-        </p>
-      </div>
+    <div class="wrapper">
+      <p class="footer__adress-text">
+        01133 Україна, Київ<br />
+        5 хвилин від м. Печерська <br />
+        вул. Лесі Українки 26
+        <br />
+        4-й поверх
+      </p>
+
       <ul class="contacts list">
         <li class="contacts__item">
           <a href="mailto:contact@goiteens.ua" class="contacts__link"
@@ -42,46 +39,34 @@
         </li>
       </ul>
       <div class="footer__btnsocials">
-        <button class="footer__button">Залишити заявку</button>
+        <button class="button">Залишити заявку</button>
         <div class="footer__social">
           <a
             href="https://t.me/goiteens"
-            class="footer__social--link"
+            class="footer__social-link"
             target="_blank"
           >
-            <img
-              class="footer__social--img"
-              src="./images/footer/telegram.png"
-              alt="Telegram"
-              width="40"
-              height="40"
-            />
+            <svg class="footer__social-icon">
+              <use href="../images/footer/telegram.svg#telegram"></use>
+            </svg>
           </a>
           <a
             href="https://www.facebook.com/GoITeens/"
-            class="footer__social--link"
+            class="footer__social-link"
             target="_blank"
           >
-            <img
-              class="footer__social--img"
-              src="./images/footer/facebook.png"
-              alt="Facebook"
-              width="40"
-              height="40"
-            />
+            <svg class="footer__social-icon">
+              <use href="../images/footer/facebook.svg#facebook"></use>
+            </svg>
           </a>
           <a
             href="https://www.youtube.com/channel/UCLMtpB2uL9mm-ZYVePLSVTA"
-            class="footer__social--link"
+            class="footer__social-link"
             target="_blank"
           >
-            <img
-              class="footer__social--img"
-              src="./images/footer/youtube.png"
-              alt="Youtube"
-              width="40"
-              height="40"
-            />
+            <svg class="footer__social-icon">
+              <use href="../images/footer/youtube.svg#youtube"></use>
+            </svg>
           </a>
         </div>
       </div>
@@ -94,9 +79,5 @@
       <a href="/" class="terms__link">Згода з розсилкою</a>
     </div>
   </div>
-  <div class="topbutton">
-    <a href="#" title="Вернуться к началу" class="topbutton__link">
-      <img src="../images/footer/arrow.png" alt="arrow" />
-    </a>
-  </div>
+  <a href="#" title="Вернуться к началу" class="topbutton"> </a>
 </footer>
