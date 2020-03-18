@@ -17,7 +17,7 @@
 }
 
 .direction-text {
-  font-family: $primary-font-stack;
+  font-family: #272727;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -30,8 +30,8 @@
   background-color: #fafafa;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 45px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-bottom: 15px;
   margin-right: auto;
   margin-left: auto;
@@ -42,16 +42,19 @@
   }
 
   &:hover {
-    background-color: #e9ac38;
+    background-color: $color-orange;
+    box-shadow: 1.5px 2.598px 8px 0px rgba(1, 1, 1, 0.1);
   }
 
   &:hover .direction-article,
-  &:focus .direction-article,
   &:hover .direction-age,
-  &:focus .direction-age,
-  &:hover .direction-link,
-  &:focus .direction-link {
+  &:hover .direction-link {
     color: #ffffff;
+  }
+
+  &:hover .direction-arrow {
+    fill: #ffffff;
+    transform: scale(2);
   }
 }
 
@@ -71,6 +74,7 @@
   font-weight: 400;
   margin-top: 30px;
   margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 .direction-age {
@@ -93,10 +97,13 @@
 }
 
 .direction-link {
-  font-size: 20px;
-  color: #e9ac38;
-  padding: 10px;
   text-decoration: none;
+}
+
+.direction-arrow {
+  fill: orange;
+  width: 19px;
+  height: 13px;
 }
 
 @media screen and (min-width: 768px) {
@@ -105,10 +112,23 @@
     margin-left: 100px;
   }
 
+  .direction-text {
+    font-family: $primary-text-color;
+    font-size: 33px;
+  }
+
   .direction-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .direction-subtitle {
+    font-size: 30px;
+  }
+
+  .direction-age {
+    font-size: 40px;
   }
 
   .direction-item {
@@ -116,6 +136,10 @@
     flex-basis: calc(100% / 2 - 100px);
     border-bottom: 1px dashed #e4e4e5;
     border-right: 1px dashed #e4e4e5;
+
+    &:hover {
+      box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
+    }
 
     &:nth-child(2n) {
       border-right: none;
@@ -134,6 +158,10 @@
 
   .direction-list {
     flex-wrap: nowrap;
+  }
+
+  .direction-article {
+    font-size: 18px;
   }
 
   .direction-item {
