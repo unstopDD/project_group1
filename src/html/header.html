@@ -1,0 +1,53 @@
+<header class="hdr">
+  <div class="container">
+    <nav class="navigation">
+      <div class="wrapper">
+        <a href="/" class="hdr__logo-link">
+          <img src="./img/top navigation.png" alt="logo" />
+        </a>
+
+        <a href="#" class="menu-btn">
+          <span class="menu-btn__line"></span>
+        </a>
+      </div>
+
+      <div class="hover-wrapper">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Front-end</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Game Dev</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Smart Design</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">GoStart Kids</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Вакансії</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Контакти</a>
+          </li>
+        </ul>
+        <a href="#" class="btn-link">Залишити заявку</a>
+      </div>
+    </nav>
+    <h1 class="title">Наша місія</h1>
+    <div class="txt-wrapper">
+      <p class="text">
+        Допомогти кожному підлітку створити свою
+        <span class="text__color">історію успіху</span>
+      </p>
+    </div>
+    <a class="scroll"></a>
+  </div>
+</header>
+<script>
+  $('.menu-btn').on('click', function(e) {
+    e.preventDefault;
+    $(this).toggleClass('menu-btn__active');
+  });
+</script>
