@@ -17,7 +17,7 @@
 }
 
 .direction-text {
-  font-family: #272727;
+  font-family: $primary-text-color;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -101,7 +101,7 @@
 }
 
 .direction-arrow {
-  fill: orange;
+  fill: $color-orange;
   width: 19px;
   height: 13px;
 }
