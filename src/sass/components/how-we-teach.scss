@@ -29,8 +29,6 @@
 }
 
 .how-we-teach__item {
-  margin-bottom: 30px;
-
   &::before {
     content: '';
     display: inline-block;
@@ -78,6 +76,14 @@
   line-height: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .how-we-teach__item {
+    margin-bottom: 30px;
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .how-we-teach__container {
     max-width: 690px;

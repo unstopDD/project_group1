@@ -1,5 +1,6 @@
 .footer {
   background-color: $footer-color-bg;
+  position: relative;
 }
 
 .footer__container {
@@ -50,11 +51,6 @@
 
 .footer__button {
   margin-bottom: 35px;
-
-  &:hover,
-  &:focus {
-    background-color: #dc9129;
-  }
 }
 
 .footer__social {
@@ -110,8 +106,8 @@
 }
 
 .topbutton {
-  position: fixed;
-  bottom: 300px;
+  position: absolute;
+  bottom: 5%;
   right: 1%;
   width: 55px;
   height: 55px;
@@ -243,7 +239,7 @@
   }
 
   .topbutton {
-    bottom: 40px;
+    bottom: 90%;
     background-position: -356px -394px;
     width: 65px;
     height: 65px;
