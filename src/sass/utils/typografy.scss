@@ -1,14 +1,19 @@
-h2 {
+h1,
+h2,
+h3,
+h4,
+title {
   font-family: $primary-font-stack;
-  color: $primary-color-text;
+  color: $primary-text-color;
   font-weight: 700;
   margin: 0;
   padding: 0;
 }
 
-p {
+p,
+text {
   font-family: $secondary-font-stack;
-  color: $secondary-color-text;
+  color: $secondary-text-color;
   margin: 0;
   padding: 0;
 }
