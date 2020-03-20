@@ -1,0 +1,209 @@
+.how-we-teach--container {
+  max-width: 280px;
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+
+.how-we-teach {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.how-we-teach__header {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 78px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/css_sprites.png');
+    background-position: -218px -414px;
+    background-color: #fcae26;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+.how-we-teach__item {
+  margin-bottom: 30px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: #ffefe5;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-image: url('../images/css_sprites.png');
+    background-position: -411px -234px;
+  }
+
+  &:nth-child(2)::before {
+    background-color: #ffe0d6;
+    background-position: -412px -60px;
+  }
+
+  &:nth-child(3)::before {
+    background-color: #e6dcf9;
+    background-position: -582px -61px;
+  }
+
+  &:nth-child(4)::before {
+    background-color: #cceeec;
+    background-position: -59px -60px;
+  }
+
+  &:nth-child(5)::before {
+    background-color: #e6dcf9;
+    background-position: -233px -234px;
+  }
+
+  &:nth-child(6)::before {
+    background-color: #ffe0d6;
+    background-position: -238px -61px;
+  }
+
+  &:nth-child(7)::before {
+    background-position: -59px -237px;
+  }
+}
+
+.how-we-teach__text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .how-we-teach--container {
+    max-width: 690px;
+    margin-bottom: 67px;
+  }
+
+  .how-we-teach__header {
+    padding-right: 34px;
+    padding-left: 34px;
+    margin-bottom: 50px;
+    font-size: 33px;
+  }
+
+  .how-we-teach {
+    padding-right: 79px;
+    padding-left: 79px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .how-we-teach__item {
+    flex-basis: calc(50% - 80px);
+    margin-right: 80px;
+    margin-bottom: 37px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      background-position: -399px -221px;
+    }
+
+    &:nth-child(2)::before {
+      background-position: -399px -49px;
+    }
+
+    &:nth-child(3)::before {
+      background-position: -569px -48px;
+    }
+
+    &:nth-child(4)::before {
+      background-position: -46px -47px;
+    }
+
+    &:nth-child(5)::before {
+      background-position: -220px -221px;
+    }
+
+    &:nth-child(6)::before {
+      background-position: -225px -48px;
+    }
+
+    &:nth-child(7)::before {
+      background-position: -46px -224px;
+    }
+  }
+
+  .how-we-teach__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .how-we-teach__section {
+    background-color: #fafafa;
+    background-image: url(../images/how-we-teach/bg.png);
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .how-we-teach--container {
+    max-width: 1300px;
+  }
+
+  .how-we-teach__header {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .how-we-teach {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .how-we-teach__item {
+    flex-basis: calc(25% - 50px);
+    margin-right: 50px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      background-position: -389px -212px;
+    }
+
+    &:nth-child(2)::before {
+      background-position: -389px -39px;
+    }
+
+    &:nth-child(3)::before {
+      background-position: -559px -38px;
+    }
+
+    &:nth-child(4)::before {
+      background-position: -36px -37px;
+    }
+
+    &:nth-child(5)::before {
+      background-position: -210px -211px;
+    }
+
+    &:nth-child(6)::before {
+      background-position: -215px -38px;
+    }
+
+    &:nth-child(7)::before {
+      background-position: -36px -214px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .how-we-teach__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

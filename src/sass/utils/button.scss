@@ -1,15 +1,12 @@
 .button {
-  margin-bottom: 35px;
   width: 190px;
   height: 45px;
-  background-color: #fcae26;
+  background-color: #e9ac38;
   border-radius: 5px;
   border: none;
   color: #f6f9fa;
+  font-family: $primary-font-stack;
   font-weight: 700;
   font-size: 16px;
-  opacity: 1;
-  &:hover,
-  &:focus {
-  }
+  box-shadow: 0px 3px 5px 0px rgba(233, 172, 56, 0.4);
 }
