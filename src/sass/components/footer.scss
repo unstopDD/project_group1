@@ -5,19 +5,15 @@
 .footer__container {
   width: 280px;
   margin: 0 auto;
+  padding-top: 45px;
   padding-right: 45px;
   padding-left: 45px;
-}
-
-.footer_header {
-  margin-bottom: 40px;
 }
 
 .footer__logo {
   width: 100px;
   height: 25px;
   margin-bottom: 20px;
-  position: -10px -10px;
 }
 
 .footer__adress {
@@ -51,12 +47,12 @@
   padding-top: 5px;
 }
 
-.button {
+.footer__button {
   margin-bottom: 35px;
 
   &:hover,
   &:focus {
-    background-color: #f38913;
+    background-color: #dc9129;
   }
 }
 
@@ -114,7 +110,7 @@
 
 .topbutton {
   position: fixed;
-  bottom: 0;
+  bottom: 300px;
   right: 1%;
   width: 55px;
   height: 55px;
@@ -127,6 +123,11 @@
 }
 
 @media screen and (max-width: 767px) {
+  .terms {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   .topbutton {
     visibility: hidden;
   }
@@ -135,6 +136,7 @@
 @media screen and (min-width: 768px) {
   .footer__container {
     width: 690px;
+    padding-top: 55px;
     padding-right: 35px;
     padding-left: 35px;
   }
@@ -142,6 +144,10 @@
   .wrapper {
     display: flex;
     margin-bottom: 35px;
+  }
+
+  .footer__logo {
+    margin-bottom: 30px;
   }
 
   .footer__adress {
@@ -156,6 +162,13 @@
 
   .footer__button {
     margin-bottom: 22px;
+    background-color: rgb(252, 174, 38);
+    box-shadow: 0px 3px 5px 0px rgba(252, 174, 38, 0.4);
+
+    &:hover,
+    &:focus {
+      background-color: #f39313;
+    }
   }
 
   .footer__social {
@@ -184,8 +197,6 @@
 @media screen and (min-width: 1300px) {
   .footer__container {
     width: 1300px;
-    padding-right: 10px;
-    padding-left: 10px;
   }
 
   .over {
@@ -205,7 +216,7 @@
     display: flex;
   }
 
-  .button {
+  .footer__button {
     margin-right: 160px;
     margin-bottom: 0;
   }
@@ -226,6 +237,7 @@
   }
 
   .topbutton {
+    bottom: 40px;
     background-position: -356px -394px;
     width: 65px;
     height: 65px;
