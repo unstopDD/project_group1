@@ -14,6 +14,7 @@
   width: 100px;
   height: 25px;
   margin-bottom: 20px;
+  margin-top: 45px;
 }
 
 .footer__adress {
@@ -22,7 +23,7 @@
   margin-bottom: 35px;
 }
 
-.footer__adress-text {
+.footer__adress--text {
   font-size: 14px;
   line-height: 25px;
   color: $footer-color-text;
@@ -41,6 +42,7 @@
   font-size: 14px;
   line-height: 25px;
   color: $footer-color-text;
+  font-family: $secondary-font-stack;
 }
 
 .footer__btnsocials {
@@ -131,6 +133,11 @@
   .topbutton {
     visibility: hidden;
   }
+
+  .terms__container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -141,7 +148,11 @@
     padding-left: 35px;
   }
 
-  .wrapper {
+  .footer__logo {
+    margin-top: 55px;
+  }
+
+  .footer__wrapper {
     display: flex;
     margin-bottom: 35px;
   }

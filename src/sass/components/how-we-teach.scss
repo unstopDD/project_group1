@@ -1,4 +1,4 @@
-.how-we-teach--container {
+.how-we-teach__container {
   max-width: 280px;
   margin-bottom: 50px;
   margin: 0 auto;
@@ -6,7 +6,6 @@
 
 .how-we-teach {
   padding-left: 45px;
-  padding-right: 45px;
 }
 
 .how-we-teach__header {
@@ -23,7 +22,7 @@
     height: 30px;
     background-image: url('../images/css_sprites.png');
     background-position: -218px -414px;
-    background-color: #fcae26;
+    background-color: $color-orange;
     border-radius: 50%;
     margin-right: 10px;
   }
@@ -80,7 +79,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .how-we-teach--container {
+  .how-we-teach__container {
     max-width: 690px;
     margin-bottom: 67px;
   }
@@ -93,16 +92,30 @@
   }
 
   .how-we-teach {
-    padding-right: 79px;
     padding-left: 79px;
     display: flex;
     flex-wrap: wrap;
   }
 
+  .how-we-teach__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1299px) {
   .how-we-teach__item {
     flex-basis: calc(50% - 80px);
     margin-right: 80px;
     margin-bottom: 37px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
 
     &::before {
       width: 80px;
@@ -134,11 +147,6 @@
       background-position: -46px -224px;
     }
   }
-
-  .how-we-teach__text {
-    font-size: 16px;
-    line-height: 22px;
-  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -147,10 +155,14 @@
     background-image: url(../images/how-we-teach/bg.png);
     background-position: center;
     background-attachment: fixed;
+    margin-bottom: 112px;
   }
 
-  .how-we-teach--container {
+  .how-we-teach__container {
     max-width: 1300px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 0;
   }
 
   .how-we-teach__header {
@@ -166,6 +178,15 @@
   .how-we-teach__item {
     flex-basis: calc(25% - 50px);
     margin-right: 50px;
+    margin-bottom: 65px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 112px;
+    }
 
     &::before {
       width: 100px;
