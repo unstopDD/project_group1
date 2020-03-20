@@ -1,8 +1,19 @@
 <header class="hdr">
   <div class="hdr__container container">
+    <nav class="navigation">
       <div class="nav-wrapper">
         <a href="/" class="hdr__logo-link">
-          <img src="../images/hdr-img/top navigation.png" alt="logo" />
+          <img
+            src="../images/logo.png"
+            alt="logo"
+            srcset="
+              ../images/hdr-img/LogoTablet.png 143w,
+              ../images/logo.png               100w
+            "
+            sizes="(min-width: 670px)
+          143px,
+          (max-width: 669px) 100px"
+          />
         </a>
 
         <a href="#" class="menu-btn">
@@ -34,9 +45,9 @@
         <button class="hdr__button button">Залишити заявку</button>
       </div>
     </nav>
-    <h1 class="hdr-title">Наша місія</h1>
+    <h1 class="hdr-title title">Наша місія</h1>
     <div class="txt-wrapper">
-      <p class="hdr-text">
+      <p class="hdr-text text">
         Допомогти кожному підлітку створити свою
         <span class="text__color">історію успіху</span>
       </p>
