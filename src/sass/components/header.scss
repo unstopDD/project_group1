@@ -75,6 +75,19 @@
 }
 
 @media screen and (max-width: 1234px) {
+  .navigation {
+    position: absolute;
+    width: 100%;
+  }
+
+  .navigation--scroll {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    transition: 0.4s;
+  }
+
   .menu-btn {
     display: block;
     width: 30px;
@@ -93,11 +106,16 @@
     margin-top: -2px;
   }
 
+  .menu-btn--black .menu-btn__line,
+  .menu-btn--black .menu-btn__line::before,
+  .menu-btn--black .menu-btn__line::after {
+    background-color: #000;
+  }
   .menu-btn__line::before,
   .menu-btn__line::after {
     content: '';
     display: block;
-    transition: 255ms;
+    // transition: 255ms;
   }
 
   .menu-btn__line::before {
@@ -141,7 +159,6 @@
     padding-top: 18px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 260px;
     z-index: 3;
     position: relative;
   }
@@ -159,13 +176,21 @@
 
   .hover-wrapper--visible {
     display: block;
+    position: fixed;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 689px) {
+  .navigation {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+  }
+
   .hdr__container {
     max-width: 689px;
     position: relative;
+    padding-top: 300px;
   }
 
   .nav-wrapper {
@@ -175,6 +200,7 @@
   }
 
   .hover-wrapper {
+    // transform: translateY(-74px);
     min-width: 320px;
     height: 560px;
     padding-top: 110px;
@@ -202,8 +228,15 @@
 }
 
 @media screen and (min-width: 690px) and (max-width: 1234px) {
+  .navigation {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+  }
+
   .hdr__container {
     max-width: 1234px;
+    padding-top: 340px;
   }
 
   .nav-wrapper {
@@ -233,11 +266,12 @@
   .hdr {
     background-image: url(..//images/hdr-img/tablet.jpg);
     min-height: 600px;
+    padding-bottom: 40px;
   }
 
   .hover-wrapper {
     min-width: 690px;
-    height: 600px;
+    height: 618px;
     padding-top: 140px;
   }
 
@@ -260,9 +294,18 @@
 }
 
 @media screen and (min-width: 1235px) {
-  .hdr__container {
+  .hdr {
     position: relative;
+    background-image: url(..//images/hdr-img/desctop.jpg);
+    // min-height: 970px;
+    // max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hdr__container {
     padding-bottom: 40px;
+    padding-top: 530px;
   }
 
   .hdr__logo-link {
@@ -276,11 +319,15 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 28px;
-    margin-bottom: 480px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .hover-wrapper {
     display: flex;
+    position: absolute;
+    top: 28px;
+    right: 40px;
   }
 
   .menu-btn {
@@ -289,14 +336,6 @@
     width: 1px;
     height: 1px;
     margin: -1px;
-  }
-
-  .hdr {
-    background-image: url(..//images/hdr-img/desctop.jpg);
-    // min-height: 970px;
-    max-width: 1920px;
-    margin-right: auto;
-    margin-left: auto;
   }
 
   .nav-list {
@@ -350,9 +389,9 @@
     padding-left: 70px;
     display: flex;
     align-items: center;
-    position: absolute;
-    left: 0;
-    margin-left: 20px;
+    // position: absolute;
+    // left: 0;
+    margin-left: 0;
   }
 
   .scroll {

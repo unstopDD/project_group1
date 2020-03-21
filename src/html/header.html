@@ -1,50 +1,50 @@
 <header class="hdr">
+  <nav id="navigation" class="navigation">
+    <div class="nav-wrapper">
+      <a href="/" class="hdr__logo-link">
+        <img
+          src="../images/logo.png"
+          alt="logo"
+          srcset="
+            ../images/hdr-img/LogoTablet.png 143w,
+            ../images/logo.png               100w
+          "
+          sizes="(min-width: 670px)
+        143px,
+        (max-width: 669px) 100px"
+        />
+      </a>
+
+      <a href="#" id="menu-btn" class="menu-btn">
+        <span id="menu-btn__line" class="menu-btn__line"></span>
+      </a>
+    </div>
+  </nav>
+
   <div class="hdr__container container">
-    <nav class="navigation">
-      <div class="nav-wrapper">
-        <a href="/" class="hdr__logo-link">
-          <img
-            src="../images/logo.png"
-            alt="logo"
-            srcset="
-              ../images/hdr-img/LogoTablet.png 143w,
-              ../images/logo.png               100w
-            "
-            sizes="(min-width: 670px)
-          143px,
-          (max-width: 669px) 100px"
-          />
-        </a>
-
-        <a href="#" id="menu-btn" class="menu-btn">
-          <span class="menu-btn__line"></span>
-        </a>
-      </div>
-
-      <div id="hover-wrapper" class="hover-wrapper">
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Front-end</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Game Dev</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Smart Design</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">GoStart Kids</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Вакансії</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Контакти</a>
-          </li>
-        </ul>
-        <button class="hdr__button button">Залишити заявку</button>
-      </div>
-    </nav>
+    <div id="hover-wrapper" class="hover-wrapper">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link">Front-end</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link">Game Dev</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link">Smart Design</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link">GoStart Kids</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link">Вакансії</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link">Контакти</a>
+        </li>
+      </ul>
+      <button class="hdr__button button">Залишити заявку</button>
+    </div>
     <h1 class="hdr-title title">Наша місія</h1>
     <div class="txt-wrapper">
       <p class="hdr-text text">
@@ -69,4 +69,17 @@
       .getElementById('hover-wrapper')
       .classList.toggle('hover-wrapper--visible');
   }
+
+  const navScroll = document.getElementById('navigation');
+  const menuBlack = document.getElementById('menu-btn');
+
+  window.onscroll = function() {
+    if (window.pageYOffset > 1) {
+      navScroll.classList.add('navigation--scroll');
+      menuBlack.classList.add('menu-btn--black');
+    } else {
+      navScroll.classList.remove('navigation--scroll');
+      menuBlack.classList.remove('menu-btn--black');
+    }
+  };
 </script>
