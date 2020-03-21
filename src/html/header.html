@@ -16,12 +16,12 @@
           />
         </a>
 
-        <a href="#" class="menu-btn">
+        <a href="#" id="menu-btn" class="menu-btn">
           <span class="menu-btn__line"></span>
         </a>
       </div>
 
-      <div class="hover-wrapper">
+      <div id="hover-wrapper" class="hover-wrapper">
         <ul class="nav-list">
           <li class="nav-list__item">
             <a href="#" class="nav-list__link">Front-end</a>
@@ -56,8 +56,17 @@
   </div>
 </header>
 <script>
-  $('.menu-btn').on('click', function(e) {
-    e.preventDefault;
-    $(this).toggleClass('menu-btn__active');
-  });
+  document.getElementById('menu-btn').addEventListener('click', active);
+
+  function active() {
+    document.getElementById('menu-btn').classList.toggle('menu-btn__active');
+  }
+
+  document.getElementById('menu-btn').addEventListener('click', openMenu);
+
+  function openMenu() {
+    document
+      .getElementById('hover-wrapper')
+      .classList.toggle('hover-wrapper--visible');
+  }
 </script>

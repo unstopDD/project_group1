@@ -126,11 +126,11 @@
   }
 
   .nav-list {
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
 
   .nav-list__item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     &:nth-child(6) {
       margin-bottom: 0;
@@ -156,6 +156,10 @@
     display: none;
     text-align: center;
   }
+
+  .hover-wrapper--visible {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 689px) {
@@ -173,7 +177,7 @@
   .hover-wrapper {
     min-width: 320px;
     height: 560px;
-    padding-top: 100px;
+    padding-top: 110px;
   }
 
   .hdr__logo-link {
@@ -234,7 +238,7 @@
   .hover-wrapper {
     min-width: 690px;
     height: 600px;
-    padding-top: 160px;
+    padding-top: 140px;
   }
 
   .hdr-title {
