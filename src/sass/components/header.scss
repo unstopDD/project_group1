@@ -111,6 +111,7 @@
   .menu-btn--black .menu-btn__line::after {
     background-color: #000;
   }
+
   .menu-btn__line::before,
   .menu-btn__line::after {
     content: '';
@@ -172,6 +173,7 @@
     width: 100%;
     display: none;
     text-align: center;
+    // height: 100vh;
   }
 
   .hover-wrapper--visible {
