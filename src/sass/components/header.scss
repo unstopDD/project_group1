@@ -74,7 +74,7 @@
   background-size: cover;
 }
 
-@media screen and (max-width: 1234px) {
+@media screen and (max-width: 1299px) {
   .navigation {
     position: absolute;
     width: 100%;
@@ -111,11 +111,11 @@
   .menu-btn--black .menu-btn__line::after {
     background-color: #000;
   }
+
   .menu-btn__line::before,
   .menu-btn__line::after {
     content: '';
     display: block;
-    // transition: 255ms;
   }
 
   .menu-btn__line::before {
@@ -180,7 +180,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 689px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .navigation {
     padding-left: 20px;
     padding-right: 20px;
@@ -200,7 +200,6 @@
   }
 
   .hover-wrapper {
-    // transform: translateY(-74px);
     min-width: 320px;
     height: 560px;
     padding-top: 110px;
@@ -227,7 +226,7 @@
   }
 }
 
-@media screen and (min-width: 690px) and (max-width: 1234px) {
+@media screen and (min-width: 768px) and (max-width: 1299px) {
   .navigation {
     padding-left: 40px;
     padding-right: 40px;
@@ -293,12 +292,10 @@
   }
 }
 
-@media screen and (min-width: 1235px) {
+@media screen and (min-width: 1300px) {
   .hdr {
     position: relative;
     background-image: url(..//images/hdr-img/desctop.jpg);
-    // min-height: 970px;
-    // max-width: 1920px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -389,8 +386,6 @@
     padding-left: 70px;
     display: flex;
     align-items: center;
-    // position: absolute;
-    // left: 0;
     margin-left: 0;
   }
 

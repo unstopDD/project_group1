@@ -91,7 +91,7 @@
   line-height: 1.375;
 }
 
-@media screen and (max-width: 659px) {
+@media screen and (max-width: 767px) {
   .learning-structure__title {
     margin-right: auto;
     margin-left: auto;
@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 768px) {
   .learning-structure {
     max-width: 620px;
     padding-top: 30px;
@@ -142,7 +142,7 @@
   }
 }
 
-@media screen and (min-width: 660px) and (max-width: 1329px) {
+@media screen and (min-width: 768px) and (max-width: 1329px) {
   .list-structure__item {
     &:nth-child(2n) {
       margin-right: 0;
