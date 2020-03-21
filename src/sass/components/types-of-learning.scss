@@ -119,6 +119,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .direction {
+    max-width: 690px;
+  }
+
   .direction-title {
     justify-content: flex-start;
     margin-left: 100px;
@@ -145,7 +149,7 @@
 
   .direction-item {
     margin: 0;
-    flex-basis: calc(100% / 2 - 100px);
+    flex-basis: 50%;
     border-bottom: 1px dashed #e4e4e5;
     border-right: 1px dashed #e4e4e5;
 
@@ -163,10 +167,11 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
   .direction {
     padding-top: 90px;
     padding-bottom: 100px;
+    max-width: 1300px;
   }
 
   .direction-title {
