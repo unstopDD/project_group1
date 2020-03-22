@@ -109,7 +109,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1299px) {
+@media screen and (min-width: 768px) and (max-width: 1339px) {
   .how-we-teach__item {
     flex-basis: calc(50% - 80px);
     margin-right: 80px;
@@ -155,20 +155,20 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1340px) {
   .how-we-teach__section {
     background-color: #fafafa;
     background-image: url(../images/how-we-teach/bg.png);
-    background-position: -120px;
+    background-position: center;
     background-attachment: fixed;
-    // margin-bottom: 112px;
-    padding-top: 90px;
   }
 
   .how-we-teach__container {
-    max-width: 1300px;
+    max-width: 1340px;
     padding-right: 0px;
     margin-bottom: 0;
+
+    padding-top: 90px;
   }
 
   .how-we-teach__header {
@@ -182,8 +182,8 @@
   }
 
   .how-we-teach__item {
-    flex-basis: calc(25% - 55px);
-    margin-right: 60px;
+    flex-basis: calc(25% - 85px);
+    margin-right: 80px;
     margin-bottom: 65px;
 
     &:nth-child(4n) {
