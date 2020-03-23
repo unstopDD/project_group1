@@ -75,7 +75,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 1234px) {
+@media screen and (max-width: 1339px) {
   .navigation {
     position: absolute;
     width: 100%;
@@ -173,12 +173,11 @@
     width: 100%;
     display: none;
     text-align: center;
-    // height: 100vh;
   }
 
   .hover-wrapper--visible {
     display: block;
-    position: fixed;
+    position: absolute;
   }
 }
 
@@ -228,7 +227,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1234px) {
+@media screen and (min-width: 768px) and (max-width: 1339px) {
   .navigation {
     padding-left: 40px;
     padding-right: 40px;
@@ -294,7 +293,7 @@
   }
 }
 
-@media screen and (min-width: 1235px) {
+@media screen and (min-width: 1340px) {
   .hdr {
     position: relative;
     background-image: url(..//images/hdr-img/desctop.jpg);
