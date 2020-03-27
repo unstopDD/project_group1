@@ -52,31 +52,3 @@
     <a class="scroll"></a>
   </div>
 </header>
-<script>
-  document.getElementById('menu-btn').addEventListener('click', active);
-
-  function active() {
-    document.getElementById('menu-btn').classList.toggle('menu-btn__active');
-  }
-
-  document.getElementById('menu-btn').addEventListener('click', openMenu);
-
-  function openMenu() {
-    document
-      .getElementById('hover-wrapper')
-      .classList.toggle('hover-wrapper--visible');
-  }
-
-  const navScroll = document.getElementById('navigation');
-  const menuBlack = document.getElementById('menu-btn');
-
-  window.onscroll = function() {
-    if (window.pageYOffset > 1) {
-      navScroll.classList.add('navigation--scroll');
-      menuBlack.classList.add('menu-btn--black');
-    } else {
-      navScroll.classList.remove('navigation--scroll');
-      menuBlack.classList.remove('menu-btn--black');
-    }
-  };
-</script>

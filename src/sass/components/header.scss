@@ -216,6 +216,12 @@
     min-height: 560px;
   }
 
+  @media screen and (min-resolution: 2dppx) {
+    .hdr {
+      background-image: url(..//images/hdr-img/mobile@2x.jpg);
+    }
+  }
+
   .hdr-title {
     padding-bottom: 20px;
     font-size: 35px;
@@ -269,6 +275,12 @@
     padding-bottom: 40px;
   }
 
+  @media screen and (min-resolution: 2dppx) {
+    .hdr {
+      background-image: url(..//images/hdr-img/tablet@2x.jpg);
+    }
+  }
+
   .hover-wrapper {
     min-width: 690px;
     height: 618px;
@@ -299,6 +311,12 @@
     background-image: url(..//images/hdr-img/desctop.jpg);
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .hdr {
+      background-image: url(..//images/hdr-img/desctop@2x.jpg);
+    }
   }
 
   .hdr__container {
